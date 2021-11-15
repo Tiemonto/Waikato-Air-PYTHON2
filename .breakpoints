@@ -1,0 +1,26 @@
+{
+  "files": {
+    "dictionaries.py": [
+      {
+        "id": "1e7cca61-47ae-4326-8923-0da2f1e897a3",
+        "line": 1,
+        "version": 552,
+        "index": 0
+      },
+      {
+        "id": "5d63734f-ed77-4950-86bf-e9ab379c06ff",
+        "line": 8,
+        "version": 552,
+        "index": 219
+      }
+    ],
+    "functions.py": [
+      {
+        "id": "a0d2fe9d-ec96-4aae-b19d-459d0436258c",
+        "line": 1,
+        "version": 4053,
+        "index": 0
+      }
+    ]
+  }
+}
