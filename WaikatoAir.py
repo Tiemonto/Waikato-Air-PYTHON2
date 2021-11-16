@@ -1,12 +1,17 @@
 # Import required files
 from dictionaries import *
 from functions import *
+import random
 
-# Introduce Program 
+# Running Introduction Program 
 fname, lname = intro()
 
+# Space out sections of program
 linebreak()
 
-locations(fname, lname, destinations)
+# Running Location Function
+y = locations(fname, lname, destinations)
+
+date_time(y, num_flights)
 
 
