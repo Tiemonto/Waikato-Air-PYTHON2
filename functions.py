@@ -1,4 +1,5 @@
- 
+import re
+
 # Linebreak Function (for clarity and aesthetics)
 def linebreak(): 
     print   ('''================================================================================
@@ -7,13 +8,38 @@ def linebreak():
 # Intro Function (establishes names)
 def intro():
     print("\nWelcome, and thank you for flying with Waikato Air today.")
+    print("\n(Only 3-28 characters are allowed.)")
     fname = input("\nPlease input your First Name: ")
+    while not re.match("[A-z]*$", fname):
+        fname = input("Error! Please re-type your name. ")
+        if re.match("[A-z]*$", fname):
+            if len(fname) > 2 or len(fname) < 29:
+                pass
+    while len(fname) < 3 or len(fname) > 28:
+        fname = input("Error! Please re-type your name. ")
+        if len(fname) > 2 or len(fname) < 29:
+            if re.match("[A-z]*$", fname):
+                pass
+    else: 
+        pass
     lname = input("\nPlease input your Surname: ")
-    return fname, lname
+    while not re.match("[A-z]*$", lname):
+        lname = input("error! Please re-type your name. ")
+        if re.match("[A-z]*$", lname):
+            if len(fname) > 2 or len(fname) < 29:
+                pass
+    while len(lname) < 3 or len(lname) > 28:
+        lname = input("Error! Please re-type your name. ")
+        if len(lname) > 2 or len(lname) < 29:
+            if re.match("[A-z]*$", fname):
+                pass
+    else:
+        pass
+    return fname.capitalize(), lname.capitalize()
 
 # Location choosing Function (and also establishes the price after discount)
 def locations(fname, lname, destinations, discount):
-    print(("\n{} {}, please choose a destination from the avaliable list (Using numbers):\n").format(fname, lname))
+    print("\n{} {}, please choose a destination from the avaliable list (Using numbers):\n".format(fname, lname))
     linebreak()
     for x in destinations.keys():
         for y in destinations[x].keys():
