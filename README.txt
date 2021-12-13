@@ -1,3 +1,2 @@
 # Waikato-Air-Program
-Run the program and follow instructions. 
-This is the test branch of the program, input answers correctly as there is no error catching.
+This is the main branch. Currently in process of adding error catching and restrictions to user answers. (Once done this is finished.)
