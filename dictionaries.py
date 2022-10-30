@@ -2,7 +2,7 @@
 
 import random
 
-# Sets the multiplier for the discount (4% - 30%)
+# Sets the multiplier for the discount (6% - 30%)
 
 discount = round(random.uniform(0.05, 0.31), 2)
 

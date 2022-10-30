@@ -2,8 +2,8 @@ import re
 
 # Linebreak Function (for clarity and aesthetics)
 def linebreak(): 
-    print   ('''================================================================================
-''')
+    print('''\n
+===============================================================================''')
 
 # Intro Function (establishes names)
 def intro():
